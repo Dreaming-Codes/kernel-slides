@@ -6,13 +6,15 @@ import {onMounted} from "vue";
 import Reveal, {PluginFunction} from "reveal.js";
 
 const props = defineProps<{
-  plugins?: PluginFunction[]
+  plugins?: PluginFunction[],
+  navigationMode?: "default" | "linear" | "grid";
 }>()
 
 onMounted(() => {
   Reveal.initialize({
     plugins: props.plugins,
     hash: true,
+    navigationMode: props.navigationMode,
   }).then()
 })
 

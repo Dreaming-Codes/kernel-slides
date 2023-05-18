@@ -1,0 +1,31 @@
+name: Node.js CI
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+        cache: 'pnpm'
+    - run: pnpm i
+    - run: pnpm run build
+    - run: npm test
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: 'dist/'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2

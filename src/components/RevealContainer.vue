@@ -3,7 +3,8 @@ import 'reveal.js/dist/reveal.css';
 import 'reveal.js/dist/theme/blood.css';
 
 import {onMounted} from "vue";
-import Reveal, {PluginFunction} from "reveal.js";
+import Reveal from "reveal.js";
+import type {PluginFunction} from "reveal.js";
 
 const props = defineProps<{
   plugins?: PluginFunction[],

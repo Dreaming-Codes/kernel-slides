@@ -11,7 +11,7 @@ import STDProblem from "@/slides/STDProblem.vue";
 import HowIsIt from "@/slides/HowIsIt.vue";
 import NowPrintSomethingProblem from "@/slides/NowPrintSomethingProblem.vue";
 import NowPrintSomethingSolution from "@/slides/NowPrintSomethingSolution.vue";
-import MorOs from "@/slides/MorOs.vue";
+import MorOs from "@/slides/MorOs/MorOs.vue";
 import NowWhatIsMissing from "@/slides/NowWhatIsMissing.vue";
 </script>
 

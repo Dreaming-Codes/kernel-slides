@@ -1,5 +1,5 @@
 <script setup>
-import MorOsFeatures from "@/slides/MorOsFeatures.vue";
+import MorOsFeatures from "@/slides/MorOs/features/MorOsFeatures.vue";
 </script>
 
 <template>

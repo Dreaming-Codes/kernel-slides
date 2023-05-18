@@ -20,7 +20,7 @@ onMounted(() => {
 })
 
 //Reload instead of hot reload since reveal.js doesn't play well with hot reload
-import.meta.hot.on("vite:beforeUpdate", ()=>{
+import.meta.hot!.on("vite:beforeUpdate", ()=>{
   location.reload();
 })
 </script>

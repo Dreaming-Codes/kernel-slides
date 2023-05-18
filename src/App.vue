@@ -13,6 +13,7 @@ import NowPrintSomethingProblem from "@/slides/NowPrintSomethingProblem.vue";
 import NowPrintSomethingSolution from "@/slides/NowPrintSomethingSolution.vue";
 import MorOs from "@/slides/MorOs/MorOs.vue";
 import NowWhatIsMissing from "@/slides/NowWhatIsMissing.vue";
+import Credits from "@/slides/Credits.vue";
 </script>
 
 <template>
@@ -25,6 +26,7 @@ import NowWhatIsMissing from "@/slides/NowWhatIsMissing.vue";
       <NowPrintSomethingSolution/>
       <NowWhatIsMissing/>
       <MorOs/>
+      <Credits/>
     </Slides>
   </RevealContainer>
 </template>
